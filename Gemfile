@@ -1,4 +1,7 @@
 source 'http://www.rubygems.org'
+
+ruby "2.0.0"
+
 gem 'thin'
 gem 'sinatra'
 gem 'grape'
