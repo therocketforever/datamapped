@@ -5,7 +5,7 @@ ruby "2.0.0"
 gem 'thin'
 gem 'sinatra'
 gem 'grape'
-gem 'datamapper'
+gem 'data_mapper'
 gem 'dm-sqlite-adapter'
 
 group :development do
@@ -13,4 +13,5 @@ group :development do
   gem 'pry-debugger'
   gem 'pry-doc'
   gem 'pry-docmore'
+  gem 'pry-coolline'
 end

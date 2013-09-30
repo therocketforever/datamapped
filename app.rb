@@ -1,8 +1,3 @@
-require 'sinatra/base'
-require 'grape'
-require 'data_mapper'
-require 'dm-sqlite-adapter'
-
 DataMapper.setup :default, 'sqlite::memory:'
 
 class User
@@ -15,6 +10,8 @@ end
 DataMapper.finalize.auto_migrate!
 
 class Web < Sinatra::Base
+
+
   get '/' do
     puts "Hello world."
     binding.pry
@@ -28,3 +25,5 @@ class API < Grape::API
     end
   end
 end
+
+binding.pry
